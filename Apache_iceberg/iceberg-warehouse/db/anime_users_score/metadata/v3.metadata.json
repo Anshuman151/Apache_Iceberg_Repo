@@ -1,0 +1,158 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "b94ae5b1-93d6-414a-9608-0073aa30a8cd",
+  "location" : "iceberg-warehouse/db/anime_users_score",
+  "last-updated-ms" : 1691757931280,
+  "last-column-id" : 5,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "user_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "Username",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "anime_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "anime_title",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "rating",
+      "required" : false,
+      "type" : "int"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "user_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "Username",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "anime_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "anime_title",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "rating",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "partition-spec" : [ {
+    "name" : "anime_id",
+    "transform" : "identity",
+    "source-id" : 3,
+    "field-id" : 1000
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "anime_id",
+      "transform" : "identity",
+      "source-id" : 3,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr"
+  },
+  "current-snapshot-id" : 7213308680007915720,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 7213308680007915720,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 1781437449177075203,
+    "timestamp-ms" : 1691757735401,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1691757561073",
+      "added-data-files" : "11829",
+      "added-records" : "1048575",
+      "added-files-size" : "30597124",
+      "changed-partition-count" : "11829",
+      "total-records" : "1048575",
+      "total-files-size" : "30597124",
+      "total-data-files" : "11829",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/anime_users_score/metadata/snap-1781437449177075203-1-511a59f2-ff79-4e22-961e-ca5c3ebdaa26.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 7213308680007915720,
+    "parent-snapshot-id" : 1781437449177075203,
+    "timestamp-ms" : 1691757931280,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1691757561073",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "2182",
+      "deleted-records" : "2182",
+      "added-files-size" : "20090",
+      "removed-files-size" : "20090",
+      "changed-partition-count" : "1",
+      "total-records" : "1048575",
+      "total-files-size" : "30597124",
+      "total-data-files" : "11829",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/anime_users_score/metadata/snap-7213308680007915720-1-2bd75f16-5f8b-456a-822a-91da9d3afc76.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1691757735401,
+    "snapshot-id" : 1781437449177075203
+  }, {
+    "timestamp-ms" : 1691757931280,
+    "snapshot-id" : 7213308680007915720
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1691757629594,
+    "metadata-file" : "iceberg-warehouse/db/anime_users_score/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1691757735401,
+    "metadata-file" : "iceberg-warehouse/db/anime_users_score/metadata/v2.metadata.json"
+  } ]
+}

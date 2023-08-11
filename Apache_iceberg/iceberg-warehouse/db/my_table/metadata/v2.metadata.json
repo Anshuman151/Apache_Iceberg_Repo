@@ -1,0 +1,89 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "dd8b9ea7-5fa5-4dc8-984d-fe7af72e0591",
+  "location" : "iceberg-warehouse/db/my_table",
+  "last-updated-ms" : 1691757437893,
+  "last-column-id" : 2,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "age",
+      "required" : false,
+      "type" : "int"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "age",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "partition-spec" : [ ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr"
+  },
+  "current-snapshot-id" : 2936313136471033108,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 2936313136471033108,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 2936313136471033108,
+    "timestamp-ms" : 1691757437893,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1691757401066",
+      "added-data-files" : "4",
+      "added-records" : "4",
+      "added-files-size" : "2586",
+      "changed-partition-count" : "1",
+      "total-records" : "4",
+      "total-files-size" : "2586",
+      "total-data-files" : "4",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/my_table/metadata/snap-2936313136471033108-1-875db55c-fabc-4127-8e58-332267cd7910.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1691757437893,
+    "snapshot-id" : 2936313136471033108
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1691757428320,
+    "metadata-file" : "iceberg-warehouse/db/my_table/metadata/v1.metadata.json"
+  } ]
+}
