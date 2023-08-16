@@ -1,0 +1,216 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "af5baeca-ab06-4045-a8a3-ac5b7dc5e87b",
+  "location" : "iceberg-warehouse/db/students",
+  "last-updated-ms" : 1692213435946,
+  "last-column-id" : 5,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "first_name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "last_name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "major",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "class_year",
+      "required" : false,
+      "type" : "int"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "first_name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "last_name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "major",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "class_year",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "partition-spec" : [ {
+    "name" : "class_year",
+    "transform" : "identity",
+    "source-id" : 5,
+    "field-id" : 1000
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "class_year",
+      "transform" : "identity",
+      "source-id" : 5,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr",
+    "write.merge.mode" : "copy-on-write",
+    "write.update.mode" : "copy-on-write",
+    "write.delete.mode" : "copy-on-write"
+  },
+  "current-snapshot-id" : 1226269504327663081,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 1226269504327663081,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 8883925395892904687,
+    "timestamp-ms" : 1692194455393,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1692194443113",
+      "added-data-files" : "5",
+      "added-records" : "20",
+      "added-files-size" : "7881",
+      "changed-partition-count" : "5",
+      "total-records" : "20",
+      "total-files-size" : "7881",
+      "total-data-files" : "5",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/students/metadata/snap-8883925395892904687-1-8fec3833-b3ef-48e6-b3a3-df36e926f46e.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 2137995163720816069,
+    "parent-snapshot-id" : 8883925395892904687,
+    "timestamp-ms" : 1692209317200,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1692208569298",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "2",
+      "deleted-records" : "2",
+      "added-files-size" : "1531",
+      "removed-files-size" : "1494",
+      "changed-partition-count" : "1",
+      "total-records" : "20",
+      "total-files-size" : "7918",
+      "total-data-files" : "5",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/students/metadata/snap-2137995163720816069-1-080b506c-21d9-480e-864c-4069e7f880c5.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 2830019819949322448,
+    "parent-snapshot-id" : 2137995163720816069,
+    "timestamp-ms" : 1692210110237,
+    "summary" : {
+      "operation" : "delete",
+      "spark.app.id" : "local-1692208569298",
+      "deleted-data-files" : "1",
+      "deleted-records" : "4",
+      "removed-files-size" : "1589",
+      "changed-partition-count" : "1",
+      "total-records" : "16",
+      "total-files-size" : "6329",
+      "total-data-files" : "4",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/students/metadata/snap-2830019819949322448-1-d4981ec8-9dc7-4a68-84d0-dbcbc79a38ba.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 1226269504327663081,
+    "parent-snapshot-id" : 2830019819949322448,
+    "timestamp-ms" : 1692213435946,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1692208569298",
+      "added-data-files" : "4",
+      "deleted-data-files" : "2",
+      "added-records" : "8",
+      "deleted-records" : "7",
+      "added-files-size" : "6113",
+      "removed-files-size" : "3157",
+      "changed-partition-count" : "4",
+      "total-records" : "17",
+      "total-files-size" : "9285",
+      "total-data-files" : "6",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/students/metadata/snap-1226269504327663081-1-f65e1aeb-bc48-4b45-8166-13d342fdb832.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1692194455393,
+    "snapshot-id" : 8883925395892904687
+  }, {
+    "timestamp-ms" : 1692209317200,
+    "snapshot-id" : 2137995163720816069
+  }, {
+    "timestamp-ms" : 1692210110237,
+    "snapshot-id" : 2830019819949322448
+  }, {
+    "timestamp-ms" : 1692213435946,
+    "snapshot-id" : 1226269504327663081
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1692194450055,
+    "metadata-file" : "iceberg-warehouse/db/students/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1692194455393,
+    "metadata-file" : "iceberg-warehouse/db/students/metadata/v2.metadata.json"
+  }, {
+    "timestamp-ms" : 1692209317200,
+    "metadata-file" : "iceberg-warehouse/db/students/metadata/v3.metadata.json"
+  }, {
+    "timestamp-ms" : 1692210110237,
+    "metadata-file" : "iceberg-warehouse/db/students/metadata/v4.metadata.json"
+  } ]
+}
