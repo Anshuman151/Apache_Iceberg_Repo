@@ -1,0 +1,158 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "fb45378b-84cd-479b-82fd-90775272be3f",
+  "location" : "iceberg-warehouse/db/tab1",
+  "last-updated-ms" : 1692185471766,
+  "last-column-id" : 5,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "order_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "customer_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 3,
+      "name" : "order_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 4,
+      "name" : "order_ts",
+      "required" : false,
+      "type" : "timestamptz"
+    }, {
+      "id" : 5,
+      "name" : "hour_ts",
+      "required" : false,
+      "type" : "int"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "order_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "customer_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 3,
+      "name" : "order_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 4,
+      "name" : "order_ts",
+      "required" : false,
+      "type" : "timestamptz"
+    }, {
+      "id" : 5,
+      "name" : "hour_ts",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "partition-spec" : [ {
+    "name" : "hour_ts",
+    "transform" : "identity",
+    "source-id" : 5,
+    "field-id" : 1000
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "hour_ts",
+      "transform" : "identity",
+      "source-id" : 5,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr"
+  },
+  "current-snapshot-id" : 1135422376850377117,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 1135422376850377117,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 7800989837212063210,
+    "timestamp-ms" : 1692185416300,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1692184718879",
+      "added-data-files" : "10",
+      "added-records" : "20",
+      "added-files-size" : "15713",
+      "changed-partition-count" : "10",
+      "total-records" : "20",
+      "total-files-size" : "15713",
+      "total-data-files" : "10",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/tab1/metadata/snap-7800989837212063210-1-cce7ece3-f824-4588-bbe0-01cc886d5dd8.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 1135422376850377117,
+    "parent-snapshot-id" : 7800989837212063210,
+    "timestamp-ms" : 1692185471766,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1692184718879",
+      "added-data-files" : "10",
+      "deleted-data-files" : "7",
+      "added-records" : "26",
+      "deleted-records" : "14",
+      "added-files-size" : "16625",
+      "removed-files-size" : "11000",
+      "changed-partition-count" : "10",
+      "total-records" : "32",
+      "total-files-size" : "21338",
+      "total-data-files" : "13",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/tab1/metadata/snap-1135422376850377117-1-cea67c6a-6d6a-42f6-b4f2-0da7e45e8fdb.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1692185416300,
+    "snapshot-id" : 7800989837212063210
+  }, {
+    "timestamp-ms" : 1692185471766,
+    "snapshot-id" : 1135422376850377117
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1692185409412,
+    "metadata-file" : "iceberg-warehouse/db/tab1/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1692185416300,
+    "metadata-file" : "iceberg-warehouse/db/tab1/metadata/v2.metadata.json"
+  } ]
+}
