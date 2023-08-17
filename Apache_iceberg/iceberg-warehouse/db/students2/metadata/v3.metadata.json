@@ -1,0 +1,128 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "728e8355-8aa9-4e96-a98b-2ad5d9f15053",
+  "location" : "iceberg-warehouse/db/students2",
+  "last-sequence-number" : 2,
+  "last-updated-ms" : 1692265114215,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "first_name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "last_name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "major",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "class_year",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "class_year",
+      "transform" : "identity",
+      "source-id" : 5,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr",
+    "write.merge.mode" : "merge-on-read",
+    "write.update.mode" : "merge-on-read",
+    "write.delete.mode" : "merge-on-read"
+  },
+  "current-snapshot-id" : 1033710749508415506,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 1033710749508415506,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 1902236467335246869,
+    "timestamp-ms" : 1692265110366,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1692265037500",
+      "added-data-files" : "5",
+      "added-records" : "20",
+      "added-files-size" : "7881",
+      "changed-partition-count" : "5",
+      "total-records" : "20",
+      "total-files-size" : "7881",
+      "total-data-files" : "5",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/students2/metadata/snap-1902236467335246869-1-f18a94ef-e54b-4d3e-8413-f6a84a158da1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 1033710749508415506,
+    "parent-snapshot-id" : 1902236467335246869,
+    "timestamp-ms" : 1692265114215,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1692265037500",
+      "added-data-files" : "1",
+      "added-position-delete-files" : "1",
+      "added-delete-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "2981",
+      "added-position-deletes" : "1",
+      "changed-partition-count" : "1",
+      "total-records" : "21",
+      "total-files-size" : "10862",
+      "total-data-files" : "6",
+      "total-delete-files" : "1",
+      "total-position-deletes" : "1",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/students2/metadata/snap-1033710749508415506-1-e6291b3a-3737-40da-8e1c-93a5a0b52f4d.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1692265110366,
+    "snapshot-id" : 1902236467335246869
+  }, {
+    "timestamp-ms" : 1692265114215,
+    "snapshot-id" : 1033710749508415506
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1692265104526,
+    "metadata-file" : "iceberg-warehouse/db/students2/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1692265110366,
+    "metadata-file" : "iceberg-warehouse/db/students2/metadata/v2.metadata.json"
+  } ]
+}

@@ -1,8 +1,8 @@
 {
   "format-version" : 1,
-  "table-uuid" : "af5baeca-ab06-4045-a8a3-ac5b7dc5e87b",
+  "table-uuid" : "6f8fee5c-14fb-4457-b3d1-331589eaab8c",
   "location" : "iceberg-warehouse/db/students",
-  "last-updated-ms" : 1692194450055,
+  "last-updated-ms" : 1692265050356,
   "last-column-id" : 5,
   "schema" : {
     "type" : "struct",

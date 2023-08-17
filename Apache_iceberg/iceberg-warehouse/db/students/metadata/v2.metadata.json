@@ -1,8 +1,8 @@
 {
   "format-version" : 1,
-  "table-uuid" : "af5baeca-ab06-4045-a8a3-ac5b7dc5e87b",
+  "table-uuid" : "6f8fee5c-14fb-4457-b3d1-331589eaab8c",
   "location" : "iceberg-warehouse/db/students",
-  "last-updated-ms" : 1692194455393,
+  "last-updated-ms" : 1692265055474,
   "last-column-id" : 5,
   "schema" : {
     "type" : "struct",
@@ -93,19 +93,19 @@
     "write.update.mode" : "copy-on-write",
     "write.delete.mode" : "copy-on-write"
   },
-  "current-snapshot-id" : 8883925395892904687,
+  "current-snapshot-id" : 5837853119636701363,
   "refs" : {
     "main" : {
-      "snapshot-id" : 8883925395892904687,
+      "snapshot-id" : 5837853119636701363,
       "type" : "branch"
     }
   },
   "snapshots" : [ {
-    "snapshot-id" : 8883925395892904687,
-    "timestamp-ms" : 1692194455393,
+    "snapshot-id" : 5837853119636701363,
+    "timestamp-ms" : 1692265055474,
     "summary" : {
       "operation" : "append",
-      "spark.app.id" : "local-1692194443113",
+      "spark.app.id" : "local-1692265037500",
       "added-data-files" : "5",
       "added-records" : "20",
       "added-files-size" : "7881",
@@ -117,16 +117,16 @@
       "total-position-deletes" : "0",
       "total-equality-deletes" : "0"
     },
-    "manifest-list" : "iceberg-warehouse/db/students/metadata/snap-8883925395892904687-1-8fec3833-b3ef-48e6-b3a3-df36e926f46e.avro",
+    "manifest-list" : "iceberg-warehouse/db/students/metadata/snap-5837853119636701363-1-4a0a6aa1-9261-453c-a687-866c6f5ccde5.avro",
     "schema-id" : 0
   } ],
   "statistics" : [ ],
   "snapshot-log" : [ {
-    "timestamp-ms" : 1692194455393,
-    "snapshot-id" : 8883925395892904687
+    "timestamp-ms" : 1692265055474,
+    "snapshot-id" : 5837853119636701363
   } ],
   "metadata-log" : [ {
-    "timestamp-ms" : 1692194450055,
+    "timestamp-ms" : 1692265050356,
     "metadata-file" : "iceberg-warehouse/db/students/metadata/v1.metadata.json"
   } ]
 }

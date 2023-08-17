@@ -1,8 +1,8 @@
 {
   "format-version" : 1,
-  "table-uuid" : "e4826fbe-8f9c-4d60-85ae-a609195cc1f6",
+  "table-uuid" : "09e7f2ab-1472-420c-afff-e7d976b7da97",
   "location" : "iceberg-warehouse/db/tab2",
-  "last-updated-ms" : 1692185452169,
+  "last-updated-ms" : 1692265355984,
   "last-column-id" : 5,
   "schema" : {
     "type" : "struct",
