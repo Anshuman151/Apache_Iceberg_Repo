@@ -1,0 +1,33 @@
+name,procedure,visit_date,visit_month
+John Doe,Cleaning,2023-08-17,8
+Jane Doe,Filling,2023-08-18,8
+Peter Smith,Extraction,2023-08-19,8
+Susan Jones,Root canal,2023-08-20,8
+David Brown,Dentures,2023-08-21,8
+Elizabeth Green,Crown,2023-08-22,8
+Michael Williams,Bridge,2023-08-23,8
+Sarah Johnson,Wisdom teeth removal,2023-08-24,8
+William Thomas,Tooth whitening,2023-08-25,8
+Jessica Anderson,Night guard,2023-08-26,8
+James Taylor,Flossing instructions,2023-08-27,8
+Emily Miller,Toothpaste recommendation,2023-08-28,8
+Robert Wilson,Regular checkup,2023-08-29,8
+Catherine Cook,X-ray,2023-08-30,8
+Daniel Rodriguez,Dental sealant,2023-09-01,9
+Nora Martinez,Fluoride treatment,2023-09-02,9
+Benjamin Hernandez,Oral hygiene instruction,2023-09-03,9
+Olivia Garcia,Toothbrush replacement,2023-09-04,9
+Lucas Perez,Floss replacement,2023-09-05,9
+Ava Smith,Toothpaste replacement,2023-09-06,9
+Noah Johnson,Mouthwash recommendation,2023-09-07,9
+Amelia Williams,Denture cleaning instructions,2023-09-08,9
+Oliver Thomas,Night guard adjustment,2023-10-09,10
+Lily Anderson,Tooth whitening follow-up,2023-10-10,10
+James Taylor,Regular checkup follow-up,2023-10-11,10
+Ethan Miller,Wisdom teeth removal follow-up,2023-10-12,10
+Isabella Wilson,Flossing instructions follow-up,2023-10-13,10
+Henry Cook,Toothpaste recommendation follow-up,2023-10-14,10
+Ava Martinez,Regular checkup follow-up,2023-10-15,10
+Noah Hernandez,X-ray follow-up,2023-10-16,10
+Benjamin Garcia,Dental sealant follow-up,2023-10-17,10
+Olivia Perez,Fluoride treatment follow-up,2023-10-18,10

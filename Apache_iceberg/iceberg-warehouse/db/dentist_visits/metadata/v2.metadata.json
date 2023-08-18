@@ -1,0 +1,109 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "631289f9-df64-4100-bb34-8cc188ce21ca",
+  "location" : "iceberg-warehouse/db/dentist_visits",
+  "last-updated-ms" : 1692364077265,
+  "last-column-id" : 3,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "procedure",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "visit_date",
+      "required" : false,
+      "type" : "date"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "procedure",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "visit_date",
+      "required" : false,
+      "type" : "date"
+    } ]
+  } ],
+  "partition-spec" : [ {
+    "name" : "visit_date_month",
+    "transform" : "month",
+    "source-id" : 3,
+    "field-id" : 1000
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "visit_date_month",
+      "transform" : "month",
+      "source-id" : 3,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr"
+  },
+  "current-snapshot-id" : 3503041048727989709,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 3503041048727989709,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 3503041048727989709,
+    "timestamp-ms" : 1692364077265,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1692363662174",
+      "added-data-files" : "3",
+      "added-records" : "32",
+      "added-files-size" : "3998",
+      "changed-partition-count" : "3",
+      "total-records" : "32",
+      "total-files-size" : "3998",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/dentist_visits/metadata/snap-3503041048727989709-1-43cc6741-47c1-40c9-8252-4732016dea53.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1692364077265,
+    "snapshot-id" : 3503041048727989709
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1692363853388,
+    "metadata-file" : "iceberg-warehouse/db/dentist_visits/metadata/v1.metadata.json"
+  } ]
+}
