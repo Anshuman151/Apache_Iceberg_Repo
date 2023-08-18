@@ -1,0 +1,89 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "a9fbd87a-05e7-4731-835d-508900a31a98",
+  "location" : "iceberg-warehouse/db/part_evol",
+  "last-updated-ms" : 1692392694014,
+  "last-column-id" : 5,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "user_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "Username",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "anime_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "anime_title",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "rating",
+      "required" : false,
+      "type" : "int"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "user_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "Username",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "anime_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "anime_title",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "rating",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "partition-spec" : [ ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr"
+  },
+  "current-snapshot-id" : -1,
+  "refs" : { },
+  "snapshots" : [ ],
+  "statistics" : [ ],
+  "snapshot-log" : [ ],
+  "metadata-log" : [ ]
+}

@@ -1,0 +1,119 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "a9fbd87a-05e7-4731-835d-508900a31a98",
+  "location" : "iceberg-warehouse/db/part_evol",
+  "last-updated-ms" : 1692392705734,
+  "last-column-id" : 5,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "user_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "Username",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "anime_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "anime_title",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "rating",
+      "required" : false,
+      "type" : "int"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "user_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "Username",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "anime_id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "anime_title",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "rating",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "partition-spec" : [ ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr"
+  },
+  "current-snapshot-id" : 6492889079827931142,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 6492889079827931142,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 6492889079827931142,
+    "timestamp-ms" : 1692392705734,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1692392689197",
+      "added-data-files" : "8",
+      "added-records" : "1048575",
+      "added-files-size" : "4753887",
+      "changed-partition-count" : "1",
+      "total-records" : "1048575",
+      "total-files-size" : "4753887",
+      "total-data-files" : "8",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/part_evol/metadata/snap-6492889079827931142-1-c83677a8-81c4-4fbd-98dd-828a973dd373.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1692392705734,
+    "snapshot-id" : 6492889079827931142
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1692392694014,
+    "metadata-file" : "iceberg-warehouse/db/part_evol/metadata/v1.metadata.json"
+  } ]
+}

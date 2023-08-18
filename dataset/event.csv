@@ -1,0 +1,31 @@
+id,name,artist,entry_price,city
+1,"Summer Music Festival","Ariana Grande",100,"Los Angeles"
+2,"Winter Jazz Night","John Legend",80,"New York"
+3,"Rock in the Park","Green Day",70,Chicago
+4,"EDM Nights","Calvin Harris",120,"Las Vegas"
+5,"Country Music Fest","Luke Bryan",90,Nashville
+6,"Hip Hop Showcase",Drake,110,Toronto
+7,"Classical Concert","Yo-Yo Ma",75,Boston
+8,"Reggae Nights","Bob Marley",60,Kingston
+9,"Indie Music Fest","Tame Impala",85,Melbourne
+10,"Latin Dance Fiesta",Shakira,95,Barcelona
+11,"Summer Music Festival","Ariana Grande",100,Paris
+12,"Winter Jazz Night","John Legend",80,London
+13,"Rock in the Park","Green Day",70,Seattle
+14,"EDM Nights","Calvin Harris",120,Miami
+15,"Country Music Fest","Luke Bryan",90,Austin
+16,"Hip Hop Showcase",Drake,110,Atlanta
+17,"Classical Concert","Yo-Yo Ma",75,Washington
+18,"Reggae Nights","Bob Marley",60,"Montego Bay"
+19,"Indie Music Fest","Tame Impala",85,Sydney
+20,"Latin Dance Fiesta",Shakira,95,"Rio de Janeiro"
+21,"Summer Music Festival","Ariana Grande",100,Tokyo
+22,"Winter Jazz Night","John Legend",80,Berlin
+23,"Rock in the Park","Green Day",70,"San Francisco"
+24,"EDM Nights","Calvin Harris",120,"New Orleans"
+25,"Country Music Fest","Luke Bryan",90,Dallas
+26,"Hip Hop Showcase",Drake,110,Houston
+27,"Classical Concert","Yo-Yo Ma",75,Chicago
+28,"Reggae Nights","Bob Marley",60,"Ocho Rios"
+29,"Indie Music Fest","Tame Impala",85,Perth
+30,"Latin Dance Fiesta",Shakira,95,"Mexico City"
