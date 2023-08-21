@@ -1,0 +1,99 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "0b4df8b8-3663-4ae3-8cde-c893e6f3fc7a",
+  "location" : "iceberg-warehouse/db/Events",
+  "last-updated-ms" : 1692626167478,
+  "last-column-id" : 5,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "artist",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "entry_price",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "city",
+      "required" : false,
+      "type" : "string"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "artist",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "entry_price",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "city",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "partition-spec" : [ {
+    "name" : "artist",
+    "transform" : "identity",
+    "source-id" : 3,
+    "field-id" : 1000
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "artist",
+      "transform" : "identity",
+      "source-id" : 3,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr"
+  },
+  "current-snapshot-id" : -1,
+  "refs" : { },
+  "snapshots" : [ ],
+  "statistics" : [ ],
+  "snapshot-log" : [ ],
+  "metadata-log" : [ ]
+}

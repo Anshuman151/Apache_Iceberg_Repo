@@ -1,0 +1,195 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "0b4df8b8-3663-4ae3-8cde-c893e6f3fc7a",
+  "location" : "iceberg-warehouse/db/Events",
+  "last-updated-ms" : 1692626219012,
+  "last-column-id" : 5,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "artist",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "entry_price",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "city",
+      "required" : false,
+      "type" : "string"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "artist",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "entry_price",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "city",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "partition-spec" : [ {
+    "name" : "artist",
+    "transform" : "identity",
+    "source-id" : 3,
+    "field-id" : 1000
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "artist",
+      "transform" : "identity",
+      "source-id" : 3,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "anshumanr"
+  },
+  "current-snapshot-id" : 3025969424887905520,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 3025969424887905520,
+      "type" : "branch"
+    },
+    "tag1_21Aug" : {
+      "snapshot-id" : 8811495956220048118,
+      "type" : "tag"
+    },
+    "B1" : {
+      "snapshot-id" : 8277665623436286469,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "snapshot-id" : 8811495956220048118,
+    "timestamp-ms" : 1692626174866,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1692626161911",
+      "added-data-files" : "10",
+      "added-records" : "30",
+      "added-files-size" : "17300",
+      "changed-partition-count" : "10",
+      "total-records" : "30",
+      "total-files-size" : "17300",
+      "total-data-files" : "10",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/Events/metadata/snap-8811495956220048118-1-4aa77bbc-9b93-4945-b897-bce92151c628.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 3025969424887905520,
+    "parent-snapshot-id" : 8811495956220048118,
+    "timestamp-ms" : 1692626183370,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1692626161911",
+      "added-data-files" : "1",
+      "added-records" : "2",
+      "added-files-size" : "1665",
+      "changed-partition-count" : "1",
+      "total-records" : "32",
+      "total-files-size" : "18965",
+      "total-data-files" : "11",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/Events/metadata/snap-3025969424887905520-1-c1b3cade-d559-4465-9c12-5b816b470c34.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 8277665623436286469,
+    "parent-snapshot-id" : 3025969424887905520,
+    "timestamp-ms" : 1692626219012,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1692626161911",
+      "added-data-files" : "3",
+      "deleted-data-files" : "11",
+      "added-records" : "3",
+      "deleted-records" : "32",
+      "added-files-size" : "4588",
+      "removed-files-size" : "18965",
+      "changed-partition-count" : "14",
+      "total-records" : "3",
+      "total-files-size" : "4588",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg-warehouse/db/Events/metadata/snap-8277665623436286469-1-ac08f448-d8c5-459b-bce0-6e2372d3e193.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1692626174866,
+    "snapshot-id" : 8811495956220048118
+  }, {
+    "timestamp-ms" : 1692626183370,
+    "snapshot-id" : 3025969424887905520
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1692626167478,
+    "metadata-file" : "iceberg-warehouse/db/Events/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1692626174866,
+    "metadata-file" : "iceberg-warehouse/db/Events/metadata/v2.metadata.json"
+  }, {
+    "timestamp-ms" : 1692626181979,
+    "metadata-file" : "iceberg-warehouse/db/Events/metadata/v3.metadata.json"
+  }, {
+    "timestamp-ms" : 1692626183370,
+    "metadata-file" : "iceberg-warehouse/db/Events/metadata/v4.metadata.json"
+  }, {
+    "timestamp-ms" : 1692626205949,
+    "metadata-file" : "iceberg-warehouse/db/Events/metadata/v5.metadata.json"
+  } ]
+}
